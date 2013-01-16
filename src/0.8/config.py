@@ -51,3 +51,10 @@ class Testing(Config):
     CSRF_ENABLED = False
     SQLALCHEMY_DATABASE_URI = "sqlite:////tmp/%s_test.sqlite" % project_name
     SQLALCHEMY_ECHO = False
+
+class Staging(Config):
+    pass
+
+class Production(Config):
+    pass
+
